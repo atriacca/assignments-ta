@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Travel Form</title>
+</head>
+<body>
+    <form name="travelForm">
+        <h2>Travel Form</h2>
+        <input placeholder="First Name" type="text" name="firstName"/><br>
+        <input placeholder="Last Name" type="text" name="lastName"/><br>
+        <input placeholder="Age" type="number" name="age"/><br><br>
+        <label>Gender:  Female</label><input type="radio" name="gender" value="Female"/>
+        <label>Male</label><input type="radio" name="gender" value="Male"/><br>
+        <p>Travel Destination:
+        <select name="locale">
+            <option>Hawaii</option>
+            <option>Australia</option>
+            <option>Italy</option>
+        </select></p>
+        <p>Dietary restrictions:<br>
+        <input type="checkbox" value="Vegetarian" name="diet"><label>Vegetarian</label><br>
+        <input type="checkbox" value="Lactose intolerant" name="diet"><label>Lactose intolerant</label><br>
+        <input type="checkbox" value="Peanut allergy" name="diet"><label>Peanut allergy</label><br>
+        <input type="checkbox" value="Kosher" name="diet"><label>Kosher</label><br><br>
+        <button name="submit">Submit</button></p>
+        <!-- <input type="checkbox" value="Vegetarian" name="vegetarian"><label>Vegetarian</label><br>
+        <input type="checkbox" value="Lactose intolerant" name="lactose"><label>Lactose intolerant</label><br>
+        <input type="checkbox" value="Peanut allergy" name="peanut"><label>Peanut allergy</label><br>
+        <input type="checkbox" value="Kosher" name="kosher"><label>Kosher</label><br><br>
+        <button name="submit">Submit</button></p> -->
+    </form>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.flag-container {
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    width: 600px;
+    height: 480px;
+}
+.france-blue {
+    background-color: #0055A4;
+    width: 200px;
+    height: 480px;
+}
+.france-red {
+    position: relative;
+    background-color: #EF4135;
+    width: 200px;
+    height: 480px;
+    left: 400px;
+    bottom: 480px;
+}
+.germany-black {
+    position: relative;
+    background-color: black;
+    width: 600px;
+    height: 160px;
+}
+.germany-red {
+    position: relative;
+    background-color: red;
+    width: 600px;
+    height: 160px;
+}
+.germany-yellow {
+    position: relative;
+    background-color: #FFCC00;
+    width: 600px;
+    height: 160px;
+}
+.madagascar-white {
+    position: relative;
+    /* background-color: white; */
+    width: 200px;
+    height: 480px;
+}
+.madagascar-red {
+    position: relative;
+    background-color: #fc3d32;
+    width: 400px;
+    height: 240px;
+    left: 200px;
+    bottom: 480px;
+}
+.madagascar-green {
+    position: relative;
+    background-color: #007e3a;
+    width: 400px;
+    height: 240px;
+    left: 200px;
+    bottom: 480px;
+}
+.swiss-flag-container {
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    width: 640px;
+    height: 640px;   
+    background-color: #FF0000;
+}
+.swiss-red {
+    position: relative;
+    width: 200px;
+    height: 480px;
+    left: 400px;
+    bottom: 480px;
+}
+.swiss-horiz-cross {
+    position: relative;
+    background-color: white;
+    width: 120px;
+    height: 400px;
+    left: 260px;
+    bottom: 360px;
+}
+.swiss-vert-cross {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 120px;
+    left: 120px;
+    bottom: 620px;
+}
+.sweden-flag-container {
+    position: relative;
+    background-color: #006aa7;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    width: 640px;
+    height: 400px;
+}
+.sweden-horiz-cross {
+    position: relative;
+    background-color: #fecc00;
+    width: 640px;
+    height: 80px;
+    bottom: -160px;
+}
+.sweden-vert-cross {
+    position: relative;
+    background-color: #fecc00;
+    width: 80px;
+    height: 400px;
+    left: 160px;
+    top: -80px;
+}
+.gambia-red {
+    position: relative;
+    background-color: #ce1126;
+    width: 600px;
+    height: 160px;
+    /* left: 400px;
+    bottom: 480px; */
+}
+.gambia-blue {
+    position: relative;
+    background-color: #0c1c8c;
+    width: 600px;
+    height: 110px;
+    top: 25px;
+}
+.gambia-green {
+    position: relative;
+    background-color: #3a7728;
+    width: 600px;
+    height: 160px;
+    top: 50px;
+}
+.greece-flag-container {
+    position: relative;
+    background-color: darkblue;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    width: 540px;
+    height: 360px;   
+}
+.greece-horiz-cross {
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    top: 80px;
+}
+.greece-vert-cross {
+    position: relative;
+    background-color: white;
+    width: 40px;
+    height: 200px;
+    top: -40px;
+    right: -80px;
+}
+.greece-short-white1 {
+    position: relative;
+    background-color: white;
+    width: 340px;
+    height: 40px;
+    top: -200px;
+    right:-200px;
+}
+.greece-short-white2 {
+    position: relative;
+    background-color: white;
+    width: 340px;
+    height: 40px;
+    top: -160px;
+    right:-200px;
+}
+.greece-long-white1 {
+    position: relative;
+    background-color: white;
+    width: 540px;
+    height: 40px;
+    top: -120px;
+}
+.greece-long-white2 {
+    position: relative;
+    background-color: white;
+    width: 540px;
+    height: 40px;
+    top: -80px;
+}
+/* 
+.tonga-flag
+.tonga-red {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 480px;
+    left: 400px;
+    bottom: 480px;
+}
+.tonga-white {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 480px;
+    left: 400px;
+    bottom: 480px;
+}
+.tonga-horiz-cross {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 480px;
+    left: 400px;
+    bottom: 480px;
+}
+.tonga-vert-cross {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 480px;
+    left: 400px;
+    bottom: 480px;
+}
+*/

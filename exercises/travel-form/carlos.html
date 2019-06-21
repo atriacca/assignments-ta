@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Travel Form</title>
+</head>
+<body>
+    <div class="travel-form">
+        <form name="travelForm">
+            <h1>Travel Information Form</h1>
+            <p>First name: </p>
+            <input name="firstName" type="text" maxlength="30">
+            <p>Last name:  </p>
+            <input name="lastName" type="text" maxlength="30">
+            <p>Age:        </p>
+            <input name="age" type="number" min="0" max="150">
+            <p>Gender:</p><span>Female </span><input name="gender" type="radio" value="female">
+            <span>Male </span><input name="gender" type="radio" value="male">
+            <p>Destination: </p>
+            <select name="destinations">
+                <option value="barrow-ak">Utqiagvik, AK</option>
+                <option value="boring-md">Boring, MD</option>
+                <option value="boring-or">Boring, OR</option>
+                <option value="hell-mi">Hell, MI</option>
+                <option value="purgatory-me">Purgatory, ME</option>
+            </select>
+            <p>Dietary Restrictions:</p>
+            <span>Shellfish </span><input value="shellfish" name="diet" type="checkbox">
+            <span>Vegetarian </span><input value="vegetarian" name="diet" type="checkbox">
+            <span>Vampire </span><input value="vampire" name="diet" type="checkbox">
+            <br>
+            <input name="submitForm" class="submit-button" type="submit" value="Submit Form">
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
