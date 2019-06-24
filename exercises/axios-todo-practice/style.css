@@ -6,7 +6,8 @@
     font-size: 16px;
 }
 body {
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
+    background-image: url("resources/nasa-space-pictures-hd-hd-widescreen-11.jpg");
 }
 .titleLineThrough, .completedLineThrough, .done {
     text-decoration: line-through;
@@ -31,15 +32,28 @@ div > button, form > button {
 }
 input {
     padding: 3px;
-    display: block;
+    width: 90%;
+    /* display: block; */
+    /* flex-wrap: wrap; */
+}
+input[type=checkbox] {
+    padding: 3px;
+    width: 10%;
+    /* display: block; */
+    /* flex-wrap: wrap; */
 }
 p > input, div > input {
     display: inline-block;
-    width: 50px;
+    min-width: 50px;
 }
+/* p > input {
+    display: inline-block;
+    min-width: 50px;
+} */
 h1 {
     font-size: 2em;
     text-align: center;
+    color: lightblue;
 }
 h3 {
     font-size: 1.5em;
@@ -48,13 +62,34 @@ img {
     width: 100%;
     padding: 5%;
 }
+#todo-edit {
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+#todo-list {
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .todoContainer {
+    text-align: center;
     border: 1px solid black;
     border-radius: 7px;
-    margin: 10px auto;
+    margin: 10px ;
     padding: 10px;
     background-color: lightblue;
-    width: 90vw;
+    width: 45vw;
+    min-width: 300px;
+    max-width: 500px;
+    display: inline-block;
 }
 .formContainer {
     background-color: lightblue;

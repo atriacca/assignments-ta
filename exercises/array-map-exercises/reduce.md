@@ -1,3 +1,16 @@
+.reduce()
+Returns any kind of value you want (number, string, boolean, array, etc.)
+Inner function used to combine the values from the original array into a single value of some kind. E.g.: adding all the values together from an array of numbers.
+
+.reduce() - Returns the sum of an array of numbers
+var numbers = [1,2,3,4,5];
+
+numbers.reduce(function(sum,x){
+    return sum + x
+}, 0)
+
+// => 15
+
 https://coursework.vschool.io/array-reduce-exercises/
 
 Array Reduce Exercises, 27 SEPTEMBER 2017

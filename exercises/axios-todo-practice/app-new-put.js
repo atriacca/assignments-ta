@@ -56,7 +56,60 @@ function listTodos(todos){
         checkBoxText.textContent = (`Check when completed:`)
         
         editBtn.textContent = "EDIT"
-        editBtn.addEventListener("click", (e)=>createTodoEditForm(e, todos[i]))
+        // editBtn.addEventListener("click", (e)=>createTodoEditForm(e, todos[i]))
+        editBtn.addEventListener("click", (e, updatedTodo) => {
+            const updatedDescription = document.createElement("input")
+            const updatedPrice = document.createElement('input')
+            const updatedImgUrl = document.createElement('input')
+            const updatedTitle = document.createElement("input")
+            const saveBtn = document.createElement("button")
+            const cancelBtn = document.createElement("button")
+        
+            // todoContainer.classList.add("todoContainer")
+        
+            updatedTitle.type = "text"
+            updatedDescription.type = "text"
+            updatedPrice.type = "text"
+            updatedImgUrl.type = "text"
+        
+            updatedTitle.name = "updatedTitle"
+            updatedDescription.name = "updatedDescription"
+            updatedPrice.name = "updatedPrice"
+            updatedImgUrl.name = "newImgUrl"
+        
+            cancelBtn.textContent = "REFRESH PAGE"
+            cancelBtn.addEventListener("click", function(e){
+                refreshPage()
+            })
+            saveBtn.textContent = "SAVE"
+            saveBtn.addEventListener("click", function(e){
+                const newUpdatedTitle = updatedTitle.value
+                const newUpdatedDescription = updatedDescription.value
+                const newUpdatedPrice = updatedPrice.value
+                const newUpdatedImgUrl = updatedImgUrl.value
+                const updatedTodo = {
+                    description: newUpdatedDescription,
+                    price: newUpdatedPrice,
+                    imgUrl: newUpdatedImgUrl,
+                    _id: todos[i]._id,
+                    title: newUpdatedTitle
+                }
+                updateTodo(updatedTodo)
+            })
+            updatedTitle.value = todos[i].title
+            updatedDescription.value = todos[i].description
+            updatedPrice.value = todos[i].price
+            updatedImgUrl.value = todos[i].imgUrl
+        
+            todoContainer.appendChild(updatedTitle)
+            todoContainer.appendChild(updatedDescription)
+            todoContainer.appendChild(updatedPrice)
+            todoContainer.appendChild(updatedImgUrl)
+            todoContainer.appendChild(saveBtn)
+            todoContainer.appendChild(cancelBtn)
+            todoList.appendChild(todoContainer)        
+        
+        })
 
         checkBox.addEventListener("click", (e)=>updateChecked(e, todos[i]._id))
 
@@ -106,10 +159,11 @@ function updateTodo(updatedTodo){
     .then((response)=>{
         console.log(response.data)
     })
+    // refreshPage()
 }
 
 function createTodoEditForm(e, todo){
-    const todoContainer = document.createElement("div")
+    // const todoContainer = document.createElement("div")
     const updatedDescription = document.createElement("input")
     const updatedPrice = document.createElement('input')
     const updatedImgUrl = document.createElement('input')
@@ -117,7 +171,7 @@ function createTodoEditForm(e, todo){
     const saveBtn = document.createElement("button")
     const cancelBtn = document.createElement("button")
 
-    todoContainer.classList.add("todoContainer")
+    // todoContainer.classList.add("todoContainer")
 
     updatedTitle.type = "text"
     updatedDescription.type = "text"
@@ -153,13 +207,13 @@ function createTodoEditForm(e, todo){
     updatedPrice.value = todo.price
     updatedImgUrl.value = todo.imgUrl
 
-    todoEdit.appendChild(todoContainer)
     todoContainer.appendChild(updatedTitle)
     todoContainer.appendChild(updatedDescription)
     todoContainer.appendChild(updatedPrice)
     todoContainer.appendChild(updatedImgUrl)
     todoContainer.appendChild(saveBtn)
     todoContainer.appendChild(cancelBtn)
+    todoList.appendChild(todoContainer)
 
 }
 

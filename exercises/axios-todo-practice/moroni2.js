@@ -63,23 +63,8 @@ function createList(todos) {
         editDiv.appendChild(editbut)
         div.appendChild(editForm)
         document.getElementById("appendParent").appendChild(div)
-        ////////   I AM WORKING HERE /////////////
+        
         editbut.addEventListener('click', (e) => {
-            // // editPush.textContent = "Save";
-            // const editTitle = document.createElement("input");
-            // const editDecription = document.createElement("input");
-            // const editPrice = document.createElement("input");
-            // const editImageURL = document.createElement("input");
-            // editTitle.placeholder = "Title";
-            // editDecription.placeholder = "description";
-            // editPrice.type = "number";
-            // editPrice.placeholder = "$0";
-            // editImageURL.placeholder = "image Url";
-            // editTitle.name = "editTitle";
-            // editForm.appendChild(editTitle);
-            // editForm.appendChild(editDecription);
-            // editForm.appendChild(editPrice);
-            // editForm.appendChild(editImageURL);
             editIt(editbut, editForm, todos, i)
         })
     }
