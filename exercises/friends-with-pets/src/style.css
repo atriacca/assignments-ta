@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+h1 {
+    margin: 20px;
+}
+.app-container {
+    border: 1px solid blue;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightskyblue    
+}
+.friendsList {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgreen    
+}
+.friends {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightskyblue    
+}

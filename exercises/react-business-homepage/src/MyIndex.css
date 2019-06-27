@@ -1,0 +1,70 @@
+.navBar {
+    border: 3px solid purple;
+    display: flex;
+    font-size: 12px;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+.home {
+    flex: 1 1 0;
+}
+.services {
+    flex: 1 1 0;
+} 
+.contact {
+    flex: 1 1 0;
+}
+img.small {
+    width: 100%;
+}
+img.medium {
+    width: 60%;
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+img.large {
+    width: 95%;
+}
+.box1 {
+    background-color: yellow;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 0px;
+}
+.box2 {
+    background-color: yellowgreen;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 450px;
+}
+.container {
+    border: 5px solid purple;
+    display: flex;
+    justify-content: space-evenly;
+    clear: both;
+}
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: red;
+}
+.clearfix {
+    overflow: auto;
+}
+@media only screen and (max-width: 750px){
+    p { 
+      font-size: 15px;
+    }
+    .navBar {
+        display: block;      
+    }    
+    .container {
+        display: block;      
+    }
+  } 

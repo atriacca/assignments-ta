@@ -1,0 +1,109 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}    
+html, body {
+    background-color: lightblue;
+    margin: 10px;
+    height: 100%;
+}
+h1 {
+    font-style: italic;
+    font-size: 300%;
+    color: purple;
+    text-align: center;
+    clear: both;
+}
+.navBar {
+    border: 3px solid purple;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: lightsalmon;	
+}
+.navBar > .navLink {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.navBar > .navLink:nth-child(1) {
+    background-color: rgba(179, 62, 202, 0.904);
+}
+.navBar > .navLink:nth-child(2) {
+    background-color: salmon;
+}
+.navBar > .navLink:nth-child(3) {
+    background-color: rgba(179, 62, 202, 0.904);
+}
+a:link {
+    text-decoration: none;
+}
+.home {
+    flex: 1 1 0;
+}
+.services {
+    flex: 1 1 0;
+} 
+.contact {
+    flex: 1 1 0;
+}
+img.small {
+    width: 100%;
+}
+img.medium {
+    width: 60%;
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+img.large {
+    width: 95vw;
+    margin: 10px 0;
+}
+.box1 {
+    background-color: yellow;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 0px;
+}
+.box2 {
+    background-color: yellowgreen;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 450px;
+}
+.container {
+    border: 5px solid purple;
+    display: flex;
+    justify-content: space-evenly;
+    clear: both;
+}
+.container > div {
+    /* border: 5px solid green; */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+    width: 30%;
+}
+.clearfix {
+    overflow: auto;
+}
+a > img {
+    width: 90%;
+    height: auto;
+}
+@media only screen and (max-width: 750px){
+    p { 
+      font-size: 15px;
+    }
+    .navBar {
+        display: block;      
+    }    
+    .container {
+        display: block;      
+    }
+  } 
