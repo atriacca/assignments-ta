@@ -1,0 +1,101 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+form {
+    display: grid;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto;
+    grid-template-areas: 
+        'fName lName'
+        'email pob'
+        'phone favFood'
+        'about about'
+        'button button';
+    grid-gap: 10px;
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 80vw;
+    min-width: 450;
+}
+input {
+    /* margin: 10px; */
+}
+textarea {
+    min-height: 100px;
+}
+button {
+    width: 100px;
+    margin: auto;
+    border: black solid 1px;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+.header {
+    grid-area: header;
+    border: black solid 2px;
+    margin: -20px -30px 0px -30px;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+}
+.badge:nth-child(odd) > .header {
+    background: blue;
+}
+.badge:nth-child(even) > .header {
+    background-color: crimson;
+}
+.fName {
+    grid-area: fName;
+}
+.lName {
+    grid-area: lName;
+}
+.button {
+    grid-area: button;
+}
+.name {
+    grid-area: name;
+}
+.phone {
+    grid-area: phone;
+}
+.pob {
+    grid-area: pob;
+}
+.favFood {
+    grid-area: favFood;
+}
+.email {
+    grid-area: email;
+}
+.blank {
+    grid-area: blank;
+}
+.about {
+    grid-area: about;
+    border: black solid 1px;
+    min-height: 50px;
+}
+.badge {
+    display: grid;
+    padding: 20px 30px;
+    margin: 10px auto;
+    grid-template-areas: 
+        'header header'
+        'name phone'
+        'pob favFood'
+        'email blank'
+        'about about';
+    grid-gap: 10px;
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 80vw;
+    min-width: 450;
+}

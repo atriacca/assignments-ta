@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.about  {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 100px; */
+    /* background-color: aqua; */
+    /* align-items: center; */
+}
+nav > a {
+    text-decoration: none;
+    font-family: sans-serif
+}

@@ -27,30 +27,22 @@ const DiceBox = props => {
         //     dieImage = "die9"
         //     }
 
+        let dieImage = []
         for(let i = 0; i < 5; i++){
             // console.log(props.dice[i])
-            let bgColor = "aqua"
-            let dieImage = []
             if (props.dice[i] === 1) {
-                bgColor = "fuchsia"
                 dieImage[i] = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-8934238.gif)"
             } else if (props.dice[i] === 2) {
-                bgColor = "cyan"
                 dieImage[i] = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-8031082.gif)"
             } else if (props.dice[i] === 3) {
-                bgColor = "lightgreen"
                 dieImage[i] = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-1664244.gif)"
             } else if (props.dice[i] === 4) {
-                bgColor = "orchid"
                 dieImage[i] = "url(https://cdn.clipart.email/1cee826afbbf9c6ff82faf17147ffe9b_dice-clipart-_900-901.gif)"
             } else if (props.dice[i] === 5) {
-                bgColor = "crimson"
                 dieImage[i] = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif)"
             } else if (props.dice[i] === 6) {
-                bgColor = "orange"
                 dieImage[i] = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-six-502642-5779813.gif)"
             } else {
-                bgColor = "pink"
                 dieImage[i] = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif)"
             }
             // console.log(dieImage[i])
@@ -63,8 +55,17 @@ const DiceBox = props => {
                 display: "inline-block",
                 margin: "10px",
                 // backgroundColor: bgColor,
-                // backgroundImage: dieImage[0],
+                backgroundImage: dieImage[i],
                 // backgroundImage: "url(https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif)",
+            }
+
+            const styles1 = {
+                backgroundSize: "100%",
+                width: "50px",
+                height: "50px",
+                border: "1px solid black",
+                display: "inline-block",
+                margin: "10px",
             }
             
     return (
@@ -78,12 +79,27 @@ const DiceBox = props => {
             <h1><div>{props.dice.num4}</div></h1>
             <h1><div>{props.dice.num5}</div></h1><br/> */}
             {console.log(dieImage[1])}
+            <h1>{props.dice[0]}</h1>
+            <h1>{props.dice[1]}</h1>
+            <h1>{props.dice[2]}</h1>
+            <h1>{props.dice[3]}</h1>
+            <h1>{props.dice[4]}</h1>
+            <br/>
 
-            <div style={styles} backgroundimage="{dieImage[0]}"></div>
-            <div style={styles} backgroundimage="{dieImage[1]}"></div>
-            <div style={styles} backgroundimage="{dieImage[2]}"></div>
-            <div style={styles} backgroundimage="{dieImage[3]}"></div>
-            <div style={styles} backgroundimage="{dieImage[4]}"></div><br/>
+            <div style={styles}></div>
+            <div style={styles}></div>
+            <div style={styles}></div>
+            <div style={styles}></div>
+            <div style={styles}></div>
+            <br/>
+
+            <div style={styles1} backgroundimage="{dieImage[0]}"></div>
+            <div style={styles1} backgroundimage="{dieImage[1]}"></div>
+            <div style={styles1} backgroundimage="{dieImage[2]}"></div>
+            <div style={styles1} backgroundimage="{dieImage[3]}"></div>
+            <div style={styles1} backgroundimage="{dieImage[4]}"></div>
+            <br/>
+
 
             {/* <div className="{dieImage}"></div>
             <div className="{dieImage}"></div>
@@ -92,11 +108,11 @@ const DiceBox = props => {
             <div className="{dieImage}"></div> */}
 
             {/* USING AN ARRAY*/}
-            <h1>{props.dice[0]}</h1>
+            {/* <h1>{props.dice[0]}</h1>
             <h1>{props.dice[1]}</h1>
             <h1>{props.dice[2]}</h1>
             <h1>{props.dice[3]}</h1>
-            <h1>{props.dice[4]}</h1>
+            <h1>{props.dice[4]}</h1> */}
 
             {/* <h1>Die #1: {props.dice[0]}</h1>
             <h1>Die #2: {props.dice[1]}</h1>
