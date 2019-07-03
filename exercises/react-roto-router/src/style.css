@@ -3,40 +3,48 @@
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
 }
 .about  {
     width: 100vw;
-    height: 100vh;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: lightgreen;
+    padding: 10px;
 }
 .home {
     width: 100vw;
-    height: 100vh;
     background-color: dodgerblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+}
+.services {
+    width: 100vw;
+    background-color: coral;
+    padding: 10px;
 }
 .contact {
     width: 100vw;
-    height: 100vh;
     background-color: violet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+}
+.stuff {
+    width: 100vw;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+.more {
+    width: 100vw;
+    background-color: lightsalmon;
+    padding: 10px;
 }
 nav {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    /* height: 100px; */
-    /* background-color: aqua; */
-    /* align-items: center; */
+    background-color: aqua;
 }
 nav > a {
     text-decoration: none;
-    font-family: sans-serif
 }

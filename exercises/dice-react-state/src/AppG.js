@@ -37,22 +37,24 @@ class App extends Component {
             roll[i] = Math.floor(Math.random() * 6) + 1
 
                 if (roll[i] === 1) {
-                    dieImage[i] = "die1"
+                    dieImage[i] = `url("https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-8934238.gif")`
                 } else if (roll[i] === 2) {
-                    dieImage[i] = "die2"
+                    dieImage[i] = `url("https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-8031082.gif")`
                 } else if (roll[i] === 3) {
-                    dieImage[i] = "die3"
+                    dieImage[i] = `url("https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-1664244.gif")`
                 } else if (roll[i] === 4) {
-                    dieImage[i] = "die4"
+                    dieImage[i] = `url("https://cdn.clipart.email/1cee826afbbf9c6ff82faf17147ffe9b_dice-clipart-_900-901.gif")`
                 } else if (roll[i] === 5) {
-                    dieImage[i] = "die5"
+                    dieImage[i] = `url("https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif")`
                 } else if (roll[i] === 6) {
-                    dieImage[i] = "die6"
+                    dieImage[i] = `url("https://dumielauxepices.net/sites/default/files/dice-clipart-six-502642-5779813.gif")`
                 } else {
-                    dieImage[i] = "die0"
+                    dieImage[i] = `url("https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif")`
                 }
                 // console.log(this.state.dieImages)
+                // console.log(this.state.dice)
 
+        // console.log(roll)
         this.setState({
             dice: roll,
             dieImages: dieImage
@@ -66,8 +68,6 @@ class App extends Component {
             <div>
 
                 <button onClick={this.randomDie}>Roll the dice</button>
-                
-                {/* <div className="die die0"></div> */}
 
                 {/* USING STRINGS */}
                 {/* <DiceBox dice={this.state}/> */}

@@ -4,11 +4,11 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div>
+        <nav>
             <Link to="/contact">Contact</Link>
             <Link to="/stuff">Stuff</Link>
-            <Link to="/other">Other Stuff</Link>
-        </div>
+            <Link to="/more">More Stuff</Link>
+        </nav>
     )
 }
 

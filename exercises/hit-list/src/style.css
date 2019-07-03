@@ -1,0 +1,19 @@
+body {
+    background-image: url("https://image.freepik.com/free-photo/close-up-blank-old-concrete-wall_23-2147856094.jpg");
+}
+.titleLineThrough, .completedLineThrough{
+    text-decoration: line-through;
+}
+button, input{
+    display: block;
+}
+img {
+    width: 400px;
+    height: auto;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto;
+}
