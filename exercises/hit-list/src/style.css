@@ -1,5 +1,6 @@
 body {
     background-image: url("https://image.freepik.com/free-photo/close-up-blank-old-concrete-wall_23-2147856094.jpg");
+    background-size: cover;
 }
 .titleLineThrough, .completedLineThrough{
     text-decoration: line-through;
@@ -16,4 +17,6 @@ img {
     flex-direction: column;
     width: 20%;
     margin: auto;
+    text-shadow: 5px 8px 3px darkgrey;
+
 }

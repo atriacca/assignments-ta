@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 // import ReactDOM from 'react-dom'
-// import './style.css'
+import './style.css'
 // import NewHit from './NewHit'
 // import people from './People'
 import HitList from './HitList'
@@ -28,7 +28,7 @@ class App extends Component {
         const mappedNames = this.state.people.map(person => <HitList key={person.name} people={person}/>)
 
         return (
-            <div>
+            <div id="wrapper">
                 Names: {mappedNames}
                 {/* <NewHit /> */}
             </div>
