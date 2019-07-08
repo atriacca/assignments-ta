@@ -3,7 +3,7 @@ import React from 'react'
 const Die = props => {
         console.log(props.dice.num1)
         for(let i = 0; i < 5; i++){
-            console.log(props.dice[i])
+            console.log(props.dice[0])
             let bgColor = "aqua"
             let dieImage = "url(https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif)"
             if (props.dice[i] === 1) {
@@ -62,11 +62,11 @@ const Die = props => {
             <div className="{dieImage}"></div> */}
 
             {/* USING AN ARRAY*/}
-            <h1>{props.dice[0]}</h1>
+            {/* <h1>{props.dice[0]}</h1>
             <h1>{props.dice[1]}</h1>
             <h1>{props.dice[2]}</h1>
             <h1>{props.dice[3]}</h1>
-            <h1>{props.dice[4]}</h1>
+            <h1>{props.dice[4]}</h1> */}
 
             {/* <h1>Die #1: {props.dice[0]}</h1>
             <h1>Die #2: {props.dice[1]}</h1>

@@ -1,12 +1,22 @@
-import React from 'react';
-import './style.css';
+import React, { Component } from 'react'
+import './style.css'
+import Header from './Header.js'
+// import ThemeProvider from './ThemeProvider.js'
 
-function App() {
-  return (
-    <div className="app-container">
+export default class App extends Component {
+    constructor(){
+        super()
+        this.state = {
+            value: "",
+            theme: ""
+        }
+    }
 
-    </div>
-  )
+    render() {
+        return (
+            <div>
+                <Header />
+            </div>
+        )
+    }     
 }
-
-export default App
