@@ -1,22 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
+// import { Switch, Route } from 'react-router-dom'
 import './style.css'
-import Header from './Header.js'
-// import ThemeProvider from './ThemeProvider.js'
+import Header from './components/Header.js'
+import Main from './components/Main.js'
+import Footer from './components/Footer.js'
+import { withTheme } from './context/ThemeProvider'
 
-export default class App extends Component {
-    constructor(){
-        super()
-        this.state = {
-            value: "",
-            theme: ""
-        }
-    }
+const App = (props) => {
+    return (
+        <div className={`${props.theme}-app`}>
+            <Header /> 
+            <button className={`${props.theme}-button`} onClick={props.toggleTheme}>{props.theme === "dark" ? "Switch to Light" : "Switch to Dark"}</button>
+            <Main /> 
+            <Footer /> 
+        </div>
+    )
+}     
 
-    render() {
-        return (
-            <div>
-                <Header />
-            </div>
-        )
-    }     
-}
+export default withTheme(App) 
+/* <Switch>
+    <Route path="/header" component={Header} />
+    <Route exact path="/" component={Main} />
+    <Route path="/footer" component={Footer} />
+</Switch> */

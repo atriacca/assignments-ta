@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: lavender;
+}
+h1 {
+    margin: 20px;
+    color: darkblue;
+}

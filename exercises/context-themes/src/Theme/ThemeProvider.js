@@ -25,16 +25,17 @@ class ThemeProvider extends Component {
         );
     }
 }
+
 export const withTheme = C => props => {
     return () => {
         return (
             <Consumer>
                 {(value)=>{
-                    return <C {...value} {...props} />
+                    return < C {...value} {...props} />
                 }}
-
             </Consumer>
         )
     }
 }
+
 export default ThemeProvider

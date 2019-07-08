@@ -1,23 +1,59 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.dark-header {
-    text-align: center;
-    background-color: #333;
-    height: 100vh;
-    margin: -25px;
-    padding: 50px;
-    color: #b5b51e;
+a {
+    text-decoration: none;
 }
-
-.light-header {
+button {
+    margin: 15px;
+    padding: 3px;
+    border-radius: 3px;
+}
+.dark-button {
+    background-color: purple;
+    color: lavender;
+}
+.light-button {
+    background-color: rgb(255, 165, 255);
+    color: purple;
+}
+.header, .footer {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+.dark-header, .dark-header > a {
+    background-color: crimson;
+    color: lightpink;
+}
+.light-header, .light-header > a {
+    background-color: lightpink;
+    color: crimson;
+}
+.dark-footer, .dark-footer > a {
+    background-color: darkgreen;
+    color: lightgreen;
+}
+.light-footer, .light-footer > a {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+.main {
     text-align: center;
-    background-color: white;
-    height: 100vh;
-    margin: -25px;
-    padding: 50px;
-    color: #333;
-    text-shadow: 0 0 0;
+    margin-top: -55px;
+    height: 200px;
+    padding: 50px 0;
+}
+.dark-main {
+    background-color: darkblue;
+    color: lightblue;
+}
+.light-main {
+    background-color: lightblue;
+    color: darkblue;
 }
