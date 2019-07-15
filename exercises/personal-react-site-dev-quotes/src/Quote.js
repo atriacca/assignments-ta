@@ -2,6 +2,23 @@ import React from 'react'
 import './style.css';
 
 function Quote (props) {
+
+    // console.log(JSON.stringify(localStorage.savedQuote))
+    // console.log(props.quotation.ID)
+    // const ID = props.quotation.ID
+    
+    const saveQuote = () => {
+        const savedID = props.quotation.ID
+        const savedIDs = []
+        console.log(savedID)
+        savedIDs.push(savedID)
+        console.log(savedIDs)
+
+        // localStorage.setItem("savedID", JSON.stringify(props.quotation))
+
+        localStorage[savedID] = JSON.stringify(props.quotation)
+    }
+
     const styles = {
         fontSize: "50px",
         color: 'lavender',
@@ -20,7 +37,10 @@ function Quote (props) {
                 <div className='rightQ'>&rdquo;</div>
                 <h3 className='quote'>by <span dangerouslySetInnerHTML={{ __html : props.quotation.title}} /></h3>
             </div>
-            <button className='save' onClick={() => localStorage.setItem("savedQuote", props.quotation.content)}>Save to Favorites</button>
+
+            <button className='save' onClick={() => saveQuote()}>Save to Favorites</button>
+            {/* <button className='save' onClick={() => localStorage.savedID = JSON.stringify(props.quotation)}>Save to Favorites</button> */}
+            {/* <button className='save' onClick={() => localStorage.setItem("savedID", props.quotation.content)}>Save to Favorites</button> */}
         </div>
     )
 }

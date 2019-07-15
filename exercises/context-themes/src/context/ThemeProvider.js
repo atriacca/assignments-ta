@@ -13,11 +13,21 @@ class ThemeProvider extends Component {
         // this.toggleTheme = this.toggleTheme.bind(this)
     }
 
-    toggleTheme = () => {
-        this.setState(prevState => ({
-            theme: prevState.theme === "dark" ? "light" : "dark"
-        }))
-    }
+    // switchTheme = () => {
+    //     if (this.value === "white") {
+    //         this
+    //     } else if (this.value === "light") {
+            
+    //     }
+    //     this.setState({
+    //         theme: this.theme
+    //     })
+    // }
+    // toggleTheme = () => {
+    //     this.setState(prevState => ({
+    //         theme: prevState.theme === "dark" ? "light" : "dark"
+    //     }))
+    // }
 
     render(){
         return (

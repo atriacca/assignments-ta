@@ -10,7 +10,6 @@ const App = (props) => {
     return (
         <div className={`${props.theme}-app`}>
             <Header /> 
-            <button className={`${props.theme}-button`} onClick={props.toggleTheme}>{props.theme === "dark" ? "Switch to Light" : "Switch to Dark"}</button>
             <Main /> 
             <Footer /> 
         </div>

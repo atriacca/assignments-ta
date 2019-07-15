@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+button {
+    margin: 5px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    background-color: darkmagenta;
+    color: ivory;
+    text-transform: uppercase;
+    border: 2px solid white;
+}
+h1 {
+    text-align: center;
+}
+.house {
+    border: 2px solid purple;
+    margin: 10px 10px;
+    padding: 10px;
+    /* min-height: 500px; */
+    width: 30vw;
+    min-width: 250px;
+    background-color: lightblue;
+    display: inline-table;
+    /* content: ""; */
+    /* clear: both; */
+    /* display: inline-block; */
+}
+.tile {
+    display: inline-block;
+}
+form {
+    border: 2px solid purple;
+    margin: 5px auto;
+    padding: 10px;
+    display: block;
+    width: 90vw;
+    max-width: 480px;
+    background-color: orchid;
+}
+input {
+    display: block;
+
+}
+img {
+    float: right;
+    width: 100%;
+}

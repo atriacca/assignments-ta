@@ -24,7 +24,11 @@ class App extends Component {
                 <Switch>
                     <Route 
                         exact path="/" 
-                        render={routerProps => <Store {...routerProps} items={this.state.items}/>}/>
+                        render={routerProps => <Store {...routerProps} 
+                        
+                        items={this.state.items}
+                        />
+                        }/>
                         
                     <Route  // the /:_id is a route parameter, just like a function parameter, it is a 
                             // placeholder for data we feed in as an argument.

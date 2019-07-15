@@ -8,9 +8,17 @@ a {
     text-decoration: none;
 }
 button {
-    margin: 15px;
-    padding: 3px;
+    margin: 35px;
+    padding: 3px 8px;
     border-radius: 3px;
+}
+.black-button, .black-main {
+    background-color: black;
+    color: black;
+}
+.white-button, .white-main {
+    background-color: white;
+    color: lavender;
 }
 .dark-button {
     background-color: purple;
@@ -19,6 +27,7 @@ button {
 .light-button {
     background-color: rgb(255, 165, 255);
     color: purple;
+    border: 1px solid purple;
 }
 .header, .footer {
     display: flex;
@@ -26,6 +35,14 @@ button {
     flex-direction: row;
     justify-content: space-around;
     padding: 5px;
+}
+.black-header, .black-header > a {
+    background-color: darkgrey;
+    color: lightgrey;
+}
+.white-header, .white-header > a {
+    background-color: lightgrey;
+    color: darkgrey;
 }
 .dark-header, .dark-header > a {
     background-color: crimson;
@@ -45,7 +62,6 @@ button {
 }
 .main {
     text-align: center;
-    margin-top: -55px;
     height: 200px;
     padding: 50px 0;
 }

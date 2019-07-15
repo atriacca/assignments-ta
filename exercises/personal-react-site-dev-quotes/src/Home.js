@@ -13,14 +13,14 @@ class Home extends Component {
             designQuotes: [],
             learningQuotes: [],
             currentQuote: '',
-            devKeywords: ['dev', 'development', 'develop'],
-            designKeywords: ['design', 'designer', 'designing', 'designs', 'graphic', 'layout', 'hierarchy', 'sketch', 'mock', 'art', 'artist', 'artwork'],
-            learningKeywords: ['learn', 'learning', 'teach', 'teacher', 'teaching', 'instruct', 'instructing', 'instruction', 'instructor', 'course', 'coursework', 'courses', 'tutorial', 'tutorials', 'school', 'schooling', 'theory'],
+            devKeywords: ['dev', 'development', 'develop', 'website', 'web', 'component', 'create', 'function', 'program'],
+            designKeywords: ['design', 'designer', 'designing', 'designs', 'graphic', 'template', 'web', 'website', 'create', 'creating', 'creator', 'layout', 'hierarchy', 'sketch', 'mock', 'art', 'artist', 'artwork'],
+            learningKeywords: ['learn', 'learning', 'teach', 'teacher', 'teaching', 'instruct', 'instructing', 'web', 'instruction', 'instructor', 'course', 'coursework', 'courses', 'tutorial', 'tutorials', 'example', 'examples', 'website', 'practice', 'school', 'schooling', 'theory'],
         }
     }
     componentDidMount() {
         const axios = require("axios");
-        axios.get("https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=2").then((response) =>{
+        axios.get("https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=20").then((response) =>{
             this.setState({quotes: response.data}, () => {
                 let mappedDevQuotes = '', 
                     mappedDesignQuotes = '', 
