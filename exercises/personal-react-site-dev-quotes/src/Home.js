@@ -19,7 +19,8 @@ class Home extends Component {
         }
     }
     componentDidMount() {
-        const axios = require("axios");
+        const axios = require("axios")
+        const num = Math.floor(Math.random * 40)
         axios.get("https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=20").then((response) =>{
             this.setState({quotes: response.data}, () => {
                 let mappedDevQuotes = '', 

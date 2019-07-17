@@ -57,13 +57,13 @@ p > a:hover {
 }
 .quote {
     float: none;
-    color: 'lavender';
+    color: lavender;
     font-size: 28px;
     margin: 0px 100px 0px 100px;
 }
 .save {
     /* float: left; */
-    color: 'lavender';
+    color: lavender;
     background-color: violet;
     font-size: 16px;
     margin: 20px 40px 0px 40px;
@@ -239,7 +239,7 @@ button {
     }
     .save {
         /* float: left; */
-        color: 'lavender';
+        color: lavender;
         background-color: violet;
         font-size: 14px;
         margin: 20px 40px 20px 40px;
