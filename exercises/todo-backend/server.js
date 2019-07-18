@@ -1,19 +1,8 @@
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 7000
+// const morgan from 'morgan'
 
-const todos = [
-    {
-        "name": "Clean deck",
-        "description": "Vacuum and wipe down deck",
-        "completed": false,
-        "_id": "16"
-    },{
-        "name": "Work on generator",
-        "description": "Blow out dust, change oil, etc",
-        "completed": false,
-        "_id": "17"
-    }
-]
 /*
 {
     "name": "The todo name",
@@ -29,29 +18,19 @@ const todos = [
 }
 */
 
-app.get("/todos", (res, req) => {
-    res.send(todos)
-})
+// Middleware
+app.use(express.json()) //req.body
+// app.use(morgan('dev'))
 
-app.get("/todos/:_id", (res, req) => {
-    const foundTodo = todos.find(todo => todo._id === req.params._id)
-    console.log(foundTodo)
-})
+// Routes
+// param1: Mount path (when to fire this middleware)
+// param2: What file to use when the request hits this endpoint
+app.use("/todos", require('./routes/todoRouter.js'))
 
-app.post("/todos", (res, req) => {
-    const newTodo = req.body
-    newTodo._id = Math.random().toString()
-    todos.push(newTodo)
-    res.send(newTodo)
-})
+// Examples of if our Database had multiple collections we needed routes for
+// app.use("/users", require('./routes/userRouter.js'))
+// app.use("/tv", require('./routes/tvRouter.js'))
 
-app.delete("/todos/:_id", (res, req) => {
-    const foundTodo = todos.find(todo => todo._id === req.params._id)
-    const updatedDB = todos.find(todo => todo._id !== req.params._id)
-    todos = updatedDB
-    res.send(`Successfully deleted ${foundTodo.name}.`)
-})
-
-app.listen(7000, () => {
-    console.log(`Server is running on port 7000`)
+app.listen(PORT, () => {
+    console.log(`Server is running on ${PORT}`)
 })
