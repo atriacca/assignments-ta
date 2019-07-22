@@ -1,20 +1,11 @@
-app.get("/rangers/search", (req, res) => {
-    const { weapon, color } = req.query
+const express = require('express')
+const app = express()
+const morgan = require('morgan')
+const PORT = process.env.PORT || 7000
 
-    if(color && weapon){
-        const foundRangers = rangers.filter(ranger => {
-            if(ranger.costumeColor === color && ranger.weapon === weapon){
-                return ranger
-            }
-        })
-        res.send(foundRangers)
-    } else if(req.query.color){
-        const foundRangers = rangers.filter(ranger => ranger.costumeColor === color)
-        res.send(foundRangers)
+app.use(express.JSON())
+app.use(morgan('dev'))
 
-    } else if(req.query.weapon){
-        const foundRangers = rangers.filter(ranger => ranger.weapon === weapon)
-        res.send(foundRangers)
-    }
-
+app.listen(PORT, () => {
+    console.log(`[+] Server is running on port ${PORT}`)
 })

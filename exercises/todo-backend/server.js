@@ -1,26 +1,21 @@
 const express = require('express')
 const app = express()
+const morgan = require('morgan')
+const mongoose = require('mongoose')
 const PORT = process.env.PORT || 7000
-// const morgan from 'morgan'
-
-/*
-{
-    "name": "The todo name",
-    "description": "The description of the todo",
-    "imageUrl": "http://www.myimage....",
-    "completed": false,
-    "_id": "23k4lh23h2"
-}
-{
-    "name": "Clean deck",
-    "description": "Vacuum and wipe down eckd"
-    "completed": false
-}
-*/
 
 // Middleware
 app.use(express.json()) //req.body
 // app.use(morgan('dev'))
+
+mongoose.connect("mongodb://localhost:27017/todosdb",
+    {
+        useNewUrlParser: true,
+        useFindAndModified: false,
+        useCreateIndex: true
+    })
+    .then(() => console.log("Connected to DB"))
+    .catch(err => console.log(err))
 
 // Routes
 // param1: Mount path (when to fire this middleware)
