@@ -34,3 +34,10 @@ From there its all about how you want to display those numbers in your return st
 
 Resources
 React State
+
+1: https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-8934238.gif
+2: https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-8031082.gif
+3: https://dumielauxepices.net/sites/default/files/dice-clipart-single-502631-1664244.gif
+4: https://cdn.clipart.email/1cee826afbbf9c6ff82faf17147ffe9b_dice-clipart-_900-901.gif
+5: https://dumielauxepices.net/sites/default/files/dice-clipart-five-502664-7383276.gif
+6: https://dumielauxepices.net/sites/default/files/dice-clipart-six-502642-5779813.gif
