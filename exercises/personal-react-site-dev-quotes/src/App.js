@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import './style.css';
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Favorites from './Favorites';
-import Acknowledgements from './Acknowledgements';
-import Contact from './Contact';
-import Footer from './Footer';
+import Navbar from './Navbar.js'
+import Home from './Home.js'
+import About from './About.js'
+import Favorites from './Favorites.js'
+import Acknowledgements from './Acknowledgements.js'
+import Contact from './Contact.js'
+import Footer from './Footer.js'
 
 class App extends Component {
 
@@ -30,8 +29,8 @@ class App extends Component {
             </Switch> 
             <Footer />
         </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 class Footer extends Component {
     render() {
@@ -16,7 +16,7 @@ class Footer extends Component {
             <div className="footer" style={styles}>
                 <div><Link to="/acknowledgements">Acknowledgements</Link></div>
                 <div><Link to="/contact">Contact</Link></div>
-                <div>App created by Alan Triacca</div>
+                <div>App by Alan Triacca</div>
             </div>
         )
     }

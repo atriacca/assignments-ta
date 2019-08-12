@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Quote from './Quote'
+import Quote from './Quote.js'
 
 class Home extends Component {
     constructor(){
@@ -19,14 +19,14 @@ class Home extends Component {
         }
     }
     componentDidMount() {
-        const axios = require("axios")
-        const num = Math.floor(Math.random * 40)
-        axios.get("https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=20").then((response) =>{
+        const axios = require("axios");
+        const num = Math.floor(Math.random() * 40)
+        axios.get(`https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=${num}`).then((response) =>{
             this.setState({quotes: response.data}, () => {
-                let mappedDevQuotes = '', 
+                let mappedDevQuotes = '',
                     mappedDesignQuotes = '', 
                     mappedLearningQuotes = '',
-                    mappedAllQuotes = '';
+                    mappedAllQuotes = ''
                 if(this.state.quotes){
                     let devQuotes = this.state.quotes.filter((dev, index) => {
                         return this.state.devKeywords.some((devMatch) => {
@@ -62,7 +62,7 @@ class Home extends Component {
             })
         }).catch(function(error){
             console.log(error)
-        });
+        })
     }
 
     updateQuote = (quote) => {

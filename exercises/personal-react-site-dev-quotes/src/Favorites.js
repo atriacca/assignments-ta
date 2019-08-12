@@ -1,11 +1,41 @@
 import React, { Component } from 'react'
+import Favorite from "./Favorite.js"
 
 class Favorites extends Component {
-    render() {
+    constructor(){
+        super()
+        this.state={
+            quotes: [],
+            ID: [],
+        }
+    }
 
-        // console.log(JSON.parse(localStorage.savedID))
-        // console.log(JSON.parse(localStorage.savedID).title)
+    componentDidMount(){
+        const quotes = Object.values(localStorage).map(quote=>{
+            return JSON.parse(quote)
+        })
+        this.setState({
+            quotes
+        })
+    }
+
+    removeQuote = (e) => {
+        e.persist()
+        localStorage.removeItem(e.target.id)
+        this.setState(prevState => ({
+            quotes: prevState.quotes.filter(quote => {
+                if(e.target.id === quote.ID) {
+                    return false
+                } else {
+                    return true
+                }
+            })
+        }))
+        document.location.reload()
+    }
         
+    render = () =>{
+
         const styles = {
             fontSize: "48px",
             color: 'lavender',
@@ -13,24 +43,32 @@ class Favorites extends Component {
             fontFamily: "Bradley Hand",
         }
 
-        return (
-            <div className='quote' style={styles}>
-                {/* { localStorage[savedID] */}
-                { localStorage.savedID
-                ?
-                <>
-                <h1>Saved Quotes</h1>
-                    {/* <span dangerouslySetInnerHTML={{ __html : JSON.parse(localStorage[savedID].content)}}></span>
-                    <span>by {JSON.parse(localStorage[savedID]).title}</span> */}
-                    <button className='save' onClick={localStorage.removeItem("savedID")}>Remove quote from Favorites</button>
-                </>
-                :
-                <>
-                    <h1>There aren't any quotes saved to Favorites</h1>
-                </>
-                }
-            </div>
-        )
+        if(this.state.quotes.length === 0){
+            return (
+                <div className='quote' style={styles}>
+                    <h1>There aren't any saved Favorites at this time</h1>
+                </div>
+            )
+        } else {
+            const mappedFavs = this.state.quotes.map((quote, i) => {
+                return (
+                    <div className='quote' style={styles} key={quote.ID}>
+                        <Favorite
+                            remove={this.removeQuote}
+                            quote={quote.content}
+                            title={quote.title}
+                            ID={quote.ID}/>
+                    </div>
+                ) 
+            })
+
+            return (
+                <div className='quote' style={styles}>
+                    <h1>Saved Quotes</h1>
+                    {mappedFavs}
+                </div>
+            )
+        }
     }
 }
 
