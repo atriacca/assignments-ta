@@ -21,7 +21,7 @@
     // 2: Edit the element
     h1.textContent = "Hello World"
     h1.style.color = "pink"
-    h1.style.backgroundColor = "#3338"
+    h1.style so.backgroundColor = "#3338"
     h1.style.fontFamily = "sans-serif"
 
     // 3: Display the element on the HTML
@@ -39,8 +39,6 @@
 
     // 3: Put it on the DOM
     firstDiv.appendChild(myImg)
-
-
 
 
     // 1:

@@ -50,3 +50,67 @@ var myNum = 10;
 
 // Write your ternary here to log if `myNum` is odd or even.
 (It should continue to work correctly even if myNum changes to a different number).
+
+
+Answer Questions
+
+
+Your membership is pending approval. Answer these questions from the group admins to help them review your membership. Only the admins and moderators will see your answers.
+
+A NO answer will void your application. WILL you READ the Group Rules, Group Announcements and watch City Of Dust video, or agree to be punished ? Not answering means you agree to be shamed.
+YES!
+
+Why is Burning Man NOT a PLUR event?
+Short answer is LNT
+Long answer: PLUR stands for peace, love, unity, and respect and is the core philosophy behind many music festivals, and a huge part of the annual Burning Man arts celebration (but requires LNT) in Black Rock City, NV
+
+What organization invited Burning Man into the Desert? And what is a Zone trip?
+It was Desert Siteworks (John Law, Michael Mikel) and William Binzen was a friend of Larry Harvey
+The first Burning Man on the playa was a Cacophoney "Zone Trip" that allowed the effigy that Harvey hadn't been allowed to burn on Baker Beach
+
+Group Rules From the Admins
+Group members agree to follow these rules:
+1
+Watch video: Burning Man in the Group Announcement
+2
+Burning Man is NOT PLUR. Your friend was WRONG.
+3
+No whining. Complain to your PLUR friends
+4
+No Scalpers no Scammers. You’ll be banned for life
+5
+All Comments and posts are begs.
+6
+Respect elder burners and their superior wisdom.
+7
+Trolls R your friend. Some have tickets. RU worthy
+8
+Read the Survival Guide. See Group Announcement
+9
+Don’t PM or Friend the Admins for tickets.
+10
+Other rules apply we couldn’t list.
+
+
+Burning Man 2019 Tickets
+Closed group · 20.3K Members
+Please answer these questions from the admins. It helps them review membership requests and only they can see your answers.
+Close
+Questions · 3
+
+DO NOT ASK FOR TICKET ! 17000 People asking for a tix is useless. You'll be kicked out of the group for Any ticket request.
+
+I'm FOMO. I'm not "experiencing" FOMO. I AM FOMO
+
+Only informative posts and post offering ticket will be validated.
+
+I understand completely.
+
+NEVER BUY TO SOMEONE OUTSIDE OF Escrow.com or PAYPAL FOR GOODS ANS SERVICES. No paypal to a friend, no Zelle, no western union, no idk what they are come with. Always be protected !
+
+Only Escrow.com or PAYPAL FOR GOODS ANS SERVICES
+Only Escrow.com or PAYPAL FOR GOODS ANS SERVICES
+Only Escrow.com or PAYPAL FOR GOODS ANS SERVICES
+Only Escrow.com or PAYPAL FOR GOODS ANS SERVICES
+Only Escrow.com or PAYPAL FOR GOODS ANS SERVICES
+Thnx!
