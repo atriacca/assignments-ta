@@ -22,6 +22,8 @@ class Home extends Component {
         const axios = require("axios");
         const num = Math.floor(Math.random() * 40)
         axios.get(`https://vschool-cors.herokuapp.com?url=http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=${num}`).then((response) =>{
+// https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand
+
             this.setState({quotes: response.data}, () => {
                 let mappedDevQuotes = '',
                     mappedDesignQuotes = '', 
@@ -76,6 +78,7 @@ class Home extends Component {
             <div>
                 <div className="dropdown">
                     <button className="dropbtn" >Select a new quote here...</button>
+                    <h1>NOTE: My apologies. A recent change to the API broke my app. I'm currently working on a fix.</h1>
                     <div className="dropdown-content">
                         <a href="/" onClick={() => this.updateQuote(this.state.allQuotes)}>Random Quote</a>
                         <a href="/" onClick={() => this.updateQuote(this.state.devQuotes)}>Development Quote</a>

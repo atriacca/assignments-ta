@@ -1,3 +1,8 @@
+http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=${num}
+
+https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand
+
+
 Fancy fonts: Zapfino, Noteworthy, Bradley Hand, Apple Chancery, SignPainter
 https://cdn-images-1.medium.com
 https://cdn-images-1.medium.com/max/1600/1*agGENodMcD6hhwIFdqGwrw.jpeg

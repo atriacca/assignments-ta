@@ -10,6 +10,9 @@ This exercise is designed to help use repetition to become comfortable with synt
 
 Please take your time, and really understand why you're using the code you are using.
 
+
+You've got this!
+
 Setup
 Clone down this repo. You will use it work your way through the Olympic medals.
 
