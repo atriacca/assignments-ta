@@ -177,12 +177,29 @@ p > a:hover {
         padding: 0px;
         position: absolute;
         height: 100%;
-        }
+    }
+    .name > img {
+        float: right;
+        /* position: relative; */
+        /* width: 300px; */
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
     img {
-        float: none;
-        width: 200px;
-        /* z-index: -1; */
+        /* float: none; */
+        /* clear: both; */
+        /* width: 250px; */
+        width: 100%;
+        height: auto;
         display: block;
+        /* margin-left: 20%;
+        margin-right: 18%; */
+        /* margin: auto; */
+        /* padding: auto; */
+        /* column-gap: 9px;  */
+        /* z-index: -1; */
         /* margin: 0px auto -40px auto; */
     }
     .name {

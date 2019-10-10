@@ -12,14 +12,14 @@ function Resume() {
                 <a href={require('./resources/atriaccaresume20190929.docx')} download>
                 <button className='btn'>Download .doc file</button></a>
             </span>
-            <span>
+            {/* <span>
                 <a href={require('./resources/atriaccaresume20190929.jpg')} download>
                 <button className='btn'>Download .jpg file</button></a>
             </span>
             <span>
                 <a href={require('./resources/atriaccaresume20190929.odt')} download>
                 <button className='btn'>Download OpenDoc file</button></a>
-            </span>
+            </span> */}
         </div>
     )
 }

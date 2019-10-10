@@ -1,6 +1,7 @@
+Original:
 http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=${num}
-
-https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand
+New (changing num doesn't change the quantity of quotes but it does change which quotes appear):
+https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand&filter[posts_per_page]=${num}
 
 
 Fancy fonts: Zapfino, Noteworthy, Bradley Hand, Apple Chancery, SignPainter
