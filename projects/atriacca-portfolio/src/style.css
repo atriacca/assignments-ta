@@ -23,6 +23,17 @@
     border: 1px solid darkblue; 
     border-radius: 3px;
 }
+.projectPhone {
+    /* display: grid; 
+    grid-template-columns: minmax(180px, 80%) minmax(180px, 20%); 
+    grid-template-rows: auto auto; 
+    column-gap: 90px;  */
+    text-align: center;
+    padding: 10px; 
+    margin: 10px;
+    border: 1px solid darkblue; 
+    border-radius: 3px;
+}
 /* .project {
     display: float; 
 } */
@@ -191,11 +202,12 @@ p > a:hover {
         /* float: none; */
         /* clear: both; */
         /* width: 250px; */
-        width: 100%;
+        width: 50%;
         height: auto;
         display: block;
-        /* margin-left: 20%;
-        margin-right: 18%; */
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 2%;
         /* margin: auto; */
         /* padding: auto; */
         /* column-gap: 9px;  */
@@ -231,6 +243,7 @@ p > a:hover {
         right: -200vw;
     }
 }
+
 /*
 .linear {transition-timing-function: cubic-bezier(0,0,1,1);}
 .ease {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}

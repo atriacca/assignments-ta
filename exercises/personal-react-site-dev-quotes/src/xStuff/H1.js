@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
-import Quote from './Quote'
+import Quote from '../Quote'
 
 class Home extends Component {
     constructor(){

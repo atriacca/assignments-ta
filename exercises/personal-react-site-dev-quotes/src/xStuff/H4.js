@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Quote from './Quote'
+import Quote from '../Quote'
 
 class Home extends Component {
     constructor(){

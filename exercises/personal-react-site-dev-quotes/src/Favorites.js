@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Favorite from "./Favorite.js"
+import Favorite from "./xStuff/Favorite.js"
 
 class Favorites extends Component {
     constructor(){
