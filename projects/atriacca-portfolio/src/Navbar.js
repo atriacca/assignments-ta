@@ -5,9 +5,10 @@ const Navbar = props => {
         <div 
             onClick={props.navToggler}
             className={`nav nav-${props.navToggle ? "open" : "closed"}`}>
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="#home-header">Home</a>
+            {/* <a href="#home-header">About</a> */}
             <a href="#projects-header">Projects</a>
+            <a href="#resume-header">Resume</a>
             <a href="#contact-header">Contact</a>
         </div>
     )

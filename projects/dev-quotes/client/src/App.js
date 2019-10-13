@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Navbar from './Navbar.js'
+import Home from './Home.js'
+import About from './About.js'
+import Favorites from './Favorites.js'
+import Acknowledgements from './Acknowledgements.js'
+import Contact from './Contact.js'
+import Footer from './Footer.js'
+
+class App extends Component {
+
+    render() {
+        const styles = {
+            flex: "1 1 0",
+            height: 'auto',
+        }
+
+        return (
+        <div style={styles} className='post'>
+            <Navbar />
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/favorites" component={Favorites} />
+                <Route path="/about" component={About} />
+                <Route path="/acknowledgements" component={Acknowledgements} />
+                <Route path="/contact" component={Contact} />
+            </Switch> 
+            <Footer />
+        </div>
+        )
+    }
 }
 
-export default App;
+export default App

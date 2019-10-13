@@ -12,7 +12,7 @@ function ProjectsPhone() {
                     Built with JavaScript, React, Node.js, MongoDB, Axios, Express, Mongoose, HTML, and CSS</h6>
                 </div>
                 <div className="projectPhone">
-                    <a href="http://atriacca-devquotes.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={require('./resources/DevQuotes-no-border.png')} alt="Unable to render"/></a>
+                    <a href="http://atriacca-devquotes.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={require('./resources/DevQuotes-no-border-2.png')} alt="Unable to render"/></a>
                     <h6>Quotes on Design API exercise:<br></br><br></br>
                     I created this app for the Personal React Site API project at V School's Full Stack JavaScript Development Bootcamp. I chose the <a href="https://quotesondesign.com/api/" target="_blank" rel="noopener noreferrer">Quotes on Design</a> API for this project. The quotes revolve around web development, coding, design, etc. The app allows the user to display random quotations then save any for future viewing. Please click <a href="http://atriacca-devquotes.surge.sh/" target="_blank" rel="noopener noreferrer">here</a> to load my DevQuotes project. <br></br><br></br>NOTE: My apologies. A recent change to the API broke my app. I'm currently working on a fix.<br></br><br></br>
                     Built with JavaScript, React, Node.js, Axios, HTML, and CSS</h6>

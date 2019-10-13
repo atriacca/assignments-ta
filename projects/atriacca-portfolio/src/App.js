@@ -48,7 +48,7 @@ class App extends Component {
           if (window.innerWidth > breakpoints.mobile) {
               
         return (
-            <div className="page app-container">
+            <div id="home-header" className="page app-container">
                 <div 
                     onClick={this.navToggler}
                     className={`overlay overlay-${this.state.navToggle ? "open" : "closed"}`}></div>
@@ -66,7 +66,7 @@ class App extends Component {
 
                 <Projects />
 
-                <div className='separator'></div>
+                <div id="resume-header" className='separator'></div>
                 <Resume />
                 <div className='separator'></div>
                 <Interests />
