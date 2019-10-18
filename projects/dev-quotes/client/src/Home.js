@@ -19,7 +19,7 @@ class Home extends Component {
         }
     }
     componentDidMount() {
-        const axios = require("axios");
+        const axios = require("axios")
         const num = Math.floor(Math.random() * 40)
         // axios.get(`https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand&filter[posts_per_page]=${num}`).then((response) =>{
         axios.get(`https://vschool-cors.herokuapp.com?url=https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand&filter[posts_per_page]=${num}`).then((response) =>{

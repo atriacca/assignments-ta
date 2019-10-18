@@ -6,7 +6,7 @@ class Contact extends Component {
             fontSize: "24px",
             color: 'lavender',
             textAlign: 'center',
-            fontFamily: "Verdana",
+            fontFamily: "Verdana"
         }
         return (
             <div className='quote' style={styles}>
