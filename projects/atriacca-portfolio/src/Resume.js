@@ -5,11 +5,11 @@ function Resume() {
         <div className='btnwrapper'>
             <h4>Resume</h4>
             <span>
-                <a href={require('./resources/atriaccaresume20191025.pdf')} download>
+                <a href={require('./resources/atriaccaresume20191106.pdf')} download>
                 <button className='btn'>Download .pdf file</button></a>
             </span>
             <span>
-                <a href={require('./resources/atriaccaresume20191025.docx')} download>
+                <a href={require('./resources/atriaccaresume20191106.docx')} download>
                 <button className='btn'>Download .doc file</button></a>
             </span>
             {/* <span>
