@@ -23,10 +23,12 @@ function Projects() {
                     <a href="http://atriacca-zengarden.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={require('./resources/zen-garden-img.png')} alt="Unable to render"/></a>
                 </div>
                 <div className="project">
-                    <h6>BusinessTime exercise:<br></br><br></br>
-                    Coming soon...</h6>
+                    <h6>Business Time exercise:<br></br><br></br>
+                    This was an individual assignment to create a static web site for a fictitious business. Please click <a href="http://at-business-time.surge.sh/" target="_blank" rel="noopener noreferrer">here</a> to load my project.<br></br><br></br>
+                    Built with HTML and CSS</h6>
+                    <a href="http://at-business-time.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={require('./resources/business-time-img.png')} alt="Unable to render"/></a>
                 </div>
-                <p>* This web page is under construction as I continue to add more info, projects, links, etc. Please come back to check it out periodically. Namaste...</p>
+                <p>* This web page will be perpetually under construction as I continue to add more info, projects, links, etc. Please come back to check it out periodically. Namaste...</p>
             </div>
         </div>
     )
