@@ -62,12 +62,10 @@ class App extends Component {
                 <Intro />
                 <div className='separator'></div>
                 <Profile />
-                <div id="projects-header" className='separator'></div>
-
-                <Projects />
-
                 <div id="resume-header" className='separator'></div>
                 <Resume />
+                <div id="projects-header" className='separator'></div>
+                <Projects />
                 <div className='separator'></div>
                 <Interests />
                 <div id="contact-header" className='separator'></div>

@@ -7,7 +7,7 @@ function Intro() {
             <img src={require('./resources/atriacca-p1.jpeg')} alt='Unable to render.' />
             <h2>ALAN</h2>
             <h3>TRIACCA</h3>
-            <h5>Web Developer - MERN Stack</h5>
+            <h5>Scrum Master</h5>
             </div>
         </div>
     )
